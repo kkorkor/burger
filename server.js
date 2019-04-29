@@ -8,7 +8,7 @@ app.use(express.static("public"))
 
 app.use(bodyparser.urlencoded({ extended: true}))
 app.use(bodyparser.json())
-var routes = require("../burger/controllers/burgers_controller")
+var routes = require("controllers/burgers_controller.js")
 
 app.use(routes)
 
